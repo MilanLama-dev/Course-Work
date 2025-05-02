@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(#ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+    background: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gainsboro;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: orange;
+}
+
+.sidebar .click2 {
+    top: 0;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 220px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.sidebar .click2:hover{
+    color: orange;
+}
+
+.logo{
+    font-size: 35px;
+    margin-left: auto;
+    height: auto;
+    
+}
+
+
+.icons {
+    margin-left: auto;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ion-icon {
+    font-size: 30px;
+    color: black;
+}
+
+.img {
+    left: 0;
+    top: -45px;
+    position: relative;
+}
+
+.img img{
+    width: 99.1vw;
+    height: 90vh;
+}
+
+.textoverlay {
+    position: absolute;
+    bottom: 115px;
+    left: 16px;
+}
+
+.textoverlay h1 {
+    font-size: 45px;
+    height: 20px;
+}
+
+.textoverlay a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.trending {
+    display: flex;
+    margin-left: 15px;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic2 {
+    width : 23vw;
+    height: 45vh;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.text {
+    width: auto;
+    align-content: center;
+    margin-right: 120px;
+}
+
+.photo {
+    overflow: auto;
+    position: relative;
+    margin-top: 120px;
+}
+
+.photo img{
+    width: 30vw;
+    height: 45vh;
+}
+
+.category {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.categorymen h2 {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+.categorywomen h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.categorykids h2 {
+    position: absolute;
+    top: 250px;
+    right: 250px;
+}
+
+.category a {
+    text-decoration: none;
+    color: red;
+}
+
+.news {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.new {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.inline2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic2 {
+    width : 23vw;
+    height: 45vh;
+}
