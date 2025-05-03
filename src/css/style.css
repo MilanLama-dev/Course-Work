@@ -1,16 +1,43 @@
-body{
-    margin: 0;
-    background-image: linear-gradient(#ADA996);
-}
+ /*this is for navbar */
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 45px;
-    background: transparent;
     z-index: 1;
     position: relative;
+    padding: 16px 0px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 22px 5px rgba(189, 178, 178, 0.5);
+    -webkit-box-shadow: 0px 0px 22px 5px rgba(189, 178, 178, 0.5);
+    -moz-box-shadow: 0px 0px 22px 5px rgba(189, 178, 178, 0.5);
+}
+
+.sidebar-button {
+    display: none;
+}
+
+
+
+nav ul {
+    display: flex;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #e7ad51;
 }
 
 .sidebar {
@@ -54,13 +81,11 @@ nav {
 }
 
 .pic1{
-    margin-top: 40px;
+    object-fit: contain;
     width: 25vw;
-    height: 8.5vh;
-    margin-left: 690px;
+    height: 45px;
     position: relative;
 }
-
 
 .icons {
     margin-left: 440px;
@@ -72,131 +97,6 @@ nav {
 ion-icon {
     font-size: 30px;
     color: black;
-}
-
-.img {
-    left: 0;
-    top: -45px;
-    position: relative;
-}
-
-.img img{
-    width: 99.1vw;
-    height: 90vh;
-}
-
-.textoverlay {
-    position: absolute;
-    bottom: 160px;
-    left: 65px;
-    line-height: 50px;
-}
-
-.textoverlay h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    height: 20px;
-}
-
-.textoverlay a {
-    padding: 15px;
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: white;
-    font-family:"Helvetica Neue", Arial, sans-serif;
-    border: 0px solid white;
-}
-
-.trending {
-    display: flex;
-    margin-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.inline {
-    display: flex;
-    justify-content: space-around;
-}
-
-.pic2 {
-    width : 23vw;
-    height: 45vh;
-}
-
-.detail {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.text {
-    width: auto;
-    align-content: center;
-    margin-right: 120px;
-}
-
-.photo {
-    overflow: auto;
-    position: relative;
-    margin-top: 120px;
-}
-
-.photo img{
-    width: 30vw;
-    height: 45vh;
-}
-
-.category {
-    margin-top: 50px;
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-}
-
-.categorymen h2 {
-    position: absolute;
-    top: 250px;
-    left: 250px;
-}
-
-.categorywomen h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.categorykids h2 {
-    position: absolute;
-    top: 250px;
-    right: 250px;
-}
-
-.category a {
-    text-decoration: none;
-    color: red;
-}
-
-.news {
-    margin-top: 50px;
-    margin-left: 15px;
-}
-
-.new {
-    display: flex;
-    align-items: baseline;
-    gap: 20px;
-}
-
-.inline2 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.pic2 {
-    width : 23vw;
-    height: 45vh;
 }
 
 footer {
@@ -251,6 +151,22 @@ footer {
     cursor: pointer;
 }
 
+.foothead3 {
+    margin-top: 15px;
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-footer3 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+}
+
 .footer2 {
     display: flex;
     background-color: black;
@@ -271,10 +187,26 @@ footer {
     font-size: 25px;
 }
 
-.copyr {
+.copyright {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
     margin-right: 10px;
     cursor: pointer;
 }
+
+
+@media screen and (max-width : 480px){
+    nav ul {
+        display: none;
+        
+    }
+    
+    .sidebar-button {
+        display: block;
+    }
+
+    .icons {
+        display: none;
+    }
+    }

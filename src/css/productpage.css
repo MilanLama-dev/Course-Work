@@ -1,45 +1,30 @@
-body{
-    margin: 0;
-    background-image: linear-gradient(#ADA996);
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
-    background: transparent;
-    z-index: 1;
-    position: relative;
-}
-
-.sidebar {
+.filterbar {
     height: 100%;
     width: 0;
-    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: gainsboro;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
+    
 }
 
-.sidebar a {
+.filterbar a {
     text-decoration: none;
     padding: 8px 8px 8px 32px;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: flex;
     transition: 0.3s;
 }
 
-.sidebar a:hover {
+.filterbar a:hover {
     color: orange;
 }
 
-.sidebar .click2 {
+.filterbar .choose2 {
     top: 0;
     position: absolute;
     font-size: 25px;
@@ -49,53 +34,107 @@ nav {
     cursor: pointer;
 }
 
-.sidebar .click2:hover{
+.filterbar .click2:hover{
     color: orange;
 }
 
-.pic1{
-    margin-top: 40px;
-    width: 25vw;
-    height: 8.5vh;
-    margin-left: 690px;
-    position: relative;
-}
-
-
-
-.icons {
-    margin-left: auto;
-    width: 160px;
-    display: flex;
-    justify-content: space-between;
-}
-
-ion-icon {
-    font-size: 30px;
-    color: black;
-}
-
 .filter {
-    border-style: solid;
     margin-top: 45px;
+    border-width: 1px;
     display: flex;
     background-color: white;
+    padding: 8px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px 5px rgba(230, 228, 228, 0.5);
 }
 
-.filter button{
-    width: 150px;
+.filter .filter-button{
+    padding: 8px 16px;
     margin-left: 30px;
-    align-content: center;
-    border-style: ridge;
-    border-width: 1px;
-    border-bottom: none;
-    border-top: none;
+    border: solid 1px #e7ad51;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
 }
 
-.price {
+.filter .filter-button:hover{
+    background: #e7ad51 ;
+}
+
+.feature {
     width: auto;
     height: 40px;
     font-size: 20px;
     background: transparent;
-    border-width: 1px;
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.products-container-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-gap: 8px;
+    row-gap: 32px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.products-card {
+    box-shadow: 0px 0px 40px 5px rgba(230, 228, 228, 0.5);
+-webkit-box-shadow: 0px 0px 40px 5px rgba(230, 228, 228, 0.5);
+-moz-box-shadow: 0px 0px 40px 5px rgba(230, 228, 228, 0.5);
+border-top-left-radius: 24px;
+border-top-right-radius: 24px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+padding: 8px;
+}
+
+.product-card-body {
+    padding: 8px;
+}
+
+.pic2 {
+    object-fit: cover;
+    border-radius: 24px;
+    width : 360px;
+    height: 250px;
+}
+
+@media screen and (max-width : 1440px) {
+    .products-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .products-container {
+        grid-template-columns: auto;
+    }
+}
+
+.view {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.view button {
+    font-size: 25px;
+    align-content: center;
 }

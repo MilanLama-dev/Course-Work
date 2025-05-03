@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/login.css">
+    <script src="/src/js/login.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+</style>
+<body>
+        <!--Start of nav bar-->
+        <nav>
+
+            <!--This is for logo-->
+            <img class="pic1" src="/src/image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
+    
+    <ul>
+        <li><a href="/src/index.html">Home</a></li>
+        <li><a href="/src/pages/productpage.html">Product</a></li>
+        <li><a href="/src/pages/blog.html">Blog</a></li>
+        <li><a href="#">Reference</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+    <!--This div contains sidebar info and sidebar function-->
+    <div class="sidebar" id="mySidebar">
+        <button class="click2" onclick="bar_close()">&times;</button>
+        <a href="/src/index.html">Home</a>
+        <a href="/src/pages/productpage.html">Product</a>
+        <a href="/src/pages/blog.html">Blog</a>
+        <a href="#">Reference</a>
+        <a href="#">About Us</a>
+    </div>
+    <!--button created to access sidebar-->
+    <div class="Button">
+        <button class="sidebar-button" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
+    </div>
+    <!--This is for imported icons-->
+    <div class="icons">
+        <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
+        <a href="/src/pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
+        <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+        <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+    </div>
+    
+    </nav>
+    <!--End of navbar-->
+    <section class="form-wrapper">
+    <div class="form-card">
+    <form id="login-form" name="login-form" onsubmit="return validateLoginForm()" >
+        <h1 style="text-align: center;">Login</h1>
+
+        <div class="form-input">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <span id="email-error" style="color: red;"></span>
+        </div>
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <span id="password-error" style="color: red;"></span>
+        </div>
+        <button type="submit">Login</button>
+
+        <div class="login-helper">
+            <a href="#">Forgot Password?</a>
+            <span>Don't have an account? <a href="/src/pages/signup.html">Sign Up</a></span>
+        </div>
+    </form>
+    </div>
+    </section>
+
+    <footer style="margin-top: 50px;">
+        <div class="main-footer">
+            <h2 class="foothead" style="cursor: text;">Support</h2>
+            <ul>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>Shipping and Delivery</li>
+                <li>Return Policy</li>
+                <li>Terms and Condition</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Setting</li>
+            </ul>
+            </div>
+            <div class="main-footer2">
+            <h2 class="foothead2">About</h2>
+            <ul>
+                <li>Company</li>
+                <li>Career</li>
+                <li>Investors</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+        <div class="main-footer3">
+            <h2 class="foothead3">Sign in to contact us</h2>
+            <a href="/src/pages/login.html">Click Here To Sign In</a>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div class="icon">
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-x"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <div class="copyright">© WalkStar Shoes Nepal, Inc.</div>
+    </footer>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

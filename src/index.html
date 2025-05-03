@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WalkStar Shoe</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/index.css">
     <script src="/src/js/main.js"></script>
     <style>
-        .inline h3 {
+        body{
+            margin: 0;
+            background-color: rgb(243, 243, 243);
+            }
+        .products-container h3 {
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -32,144 +37,167 @@
 <body>
     <!--Start of nav bar-->
     <nav>
+
+                <!--This is for logo-->
+                <img class="pic1" src="/src/image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
+
+        <ul>
+            <li><a href="/src/index.html">Home</a></li>
+            <li><a href="/src/pages/productpage.html">Product</a></li>
+            <li><a href="/src/pages/blog.html">Blog</a></li>
+            <li><a href="#">Reference</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
         <!--This div contains sidebar info and sidebar function-->
         <div class="sidebar" id="mySidebar">
             <button class="click2" onclick="bar_close()">&times;</button>
-            <a href="index.html">Home</a>
-            <a href="/src/pages/product.html">Product</a>
+            <a href="/src/index.html">Home</a>
+            <a href="/src/pages/productpage.html">Product</a>
             <a href="/src/pages/blog.html">Blog</a>
             <a href="#">Reference</a>
             <a href="#">About Us</a>
         </div>
         <!--button created to access sidebar-->
         <div class="Button">
-            <button class="click" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
+            <button class="sidebar-button" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
         </div>
-        <!--This is for logo-->
-        <img class="pic1" src="/src/image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
         <!--This is for imported icons-->
         <div class="icons">
             <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-            <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+            <a href="/src/pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
             <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
             <a href="#"><ion-icon name="search-outline"></ion-icon></a>
         </div>
 
     </nav>
     <!--End of navbar-->
-    <section class="img">
-        <img src="/src/image/gettyimages-1359097757-612x612.jpg" alt="shoe">
+    <section class="banner">
+        <img src="/src/image/adidas-campus-grey.png.png" alt="shoe">
         <div class="textoverlay">
             <h1>Walk with Confidence,<br> Stand Out</h1><br>
-            <a href="/src/pages/product.html">Shop Now</a>
+            <a href="/src/pages/productpage.html">Shop Now</a>
         </div> 
 
     </section><br>
 
-    <section class="trending">
+    <section class="trending" style="padding: 50px 0px;">
         <h2 style="font-size: 35px;">Trending</h2>
+
+    <section class="products-container">
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/adidas-campus-grey.png.png" alt="shoe">
+            </a>
+            <h3>Adidas Campus Grey</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 1200</h3>
+        </div>
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/adidas-gym-red-black.png.png" alt="shoe">
+            </a>
+            <h3>Adidas Gym Red & Black</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 1800</h3>
+        </div>
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/Nike Dunk Low Miami Hurricanes.png" alt="shoe">
+            </a>
+            <h3>Nike Dunk Low Miami</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 2200</h3>
+        </div>
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/nike-mismatched-laces.png.png" alt="shoe">
+            </a>
+            <h3>Nike Mismatched Laces</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 1800</h3>
+        </div>
+    </section>
     </section>
 
-    <section class="inline">
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/360_F_463738479_NMSD9LPKwKH9BbxBA7YIfKbuif6wZR3H.webp" alt="shoe">
-            </a>
-            <h3>Name</h3>
-            <h3>Nrs. 1200</h3>
-        </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
-        </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
-        </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
-        </div>
-    </section>
-
-    <section class="detail">
+    <section class="detail" style="background-color: rgb(241, 241, 241);">
         <div class="text">
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <h2>Exceptional Footwear for Exceptional Individuals</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde vel libero sequi explicabo accusamus, temporibus maiores assumenda perferendis magnam consequuntur itaque perspiciatis excepturi nobis aperiam sapiente quibusdam nesciunt voluptates.</p>
         </div>
 
-        <div class="photo">
-            <img src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="image">
+        <div class="detail-image">
+            <a href="/src/pages/productpage.html">
+            <img src="/src/image/male-foot-with-brown-leather-shoes-jeans.jpg" alt="image">
+            </a>
         </div>
     </section>
 
-    <section class="category">
-        <div class="categorymen">
-        <a href="#">
-            <img src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            <h2>Men</h2>
-        </a></div>
-        <div class="categorywomen">
-        <a href="#">
-            <img src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            <h2>Women</h2>
-        </a></div>
-        <div class="categorykids">
-        <a href="#">
-            <img src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
-            <h2>Kids</h2>
-        </a></div>
+    <section class="category-container" style="padding: 50px 0px;">
+        <a href="/src/pages/productpage.html">
+        <div class="category-card">
+            <img src="/src/image/men-s-ankle-sneakers-white-street-style-apparel-shoot.jpg" alt="shoe">
+            <div class="content-overlay">
+            <h2>Men</h2></div>
+        </div></a>
+        <a href="/src/pages/productpage.html">
+        <div class="category-card">
+            <img src="/src/image/women-category.jpg" alt="shoe">
+            <div class="content-overlay">
+            <h2>Women</h2></div>
+        </div></a>
+        <a href="/src/pages/blog.html">
+        <div class="category-card">
+            <img src="/src/image/kids-category.jpg" alt="shoe">
+            <div class="content-overlay">
+            <h2>Kids</h2></div>
+        </div></a>
     </section>
 
     <section class="news">
         <div class="new">
             <h1>New Arrival</h1>
-            <a href="/src/pages/product.html"><h3>Men</h3></a>
-            <a href="/src/pages/product.html"><h3>Women</h3></a>
-            <a href="/src/pages/product.html"><h3>Kids</h3></a>
+            <a href="/src/pages/productpage.html"><h3>Men</h3></a>
+            <a href="/src/pages/productpage.html"><h3>Women</h3></a>
+            <a href="/src/pages/productpage.html"><h3>Kids</h3></a>
         </div>
     </section>
 
-    <section class="inline2">
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
+    <section class="products-container">
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/JPG-100233213_SLC_eCom.webp" alt="shoe">
             </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
+            <h3>Rebook x Mountaineering Classic Leather</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 10000</h3>
         </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/Suede-Classic-Sneakers.avif" alt="shoe">
             </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
+            <h3>Suede Classic</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 9000</h3>
         </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/Speedcat-Leather-Women's-Sneakers.avif" alt="shoe">
             </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
+            <h3>Speedcat Leather</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 11000</h3>
         </div>
-        <div pic>
-            <a href="/src/pages/product.html">
-            <img class="pic2" src="/src/image/Ghost_Image_Hi-Top_Shoe_-_Affliction_Clothing-5837879.webp" alt="shoe">
+        <div class="product-card">
+            <a href="/src/pages/productpage.html">
+            <img class="pic2" src="/src/image/Premium-Old-Skool-Knit-Shoe.avif" alt="shoe">
             </a>
-            <h3>Name</h3>
-            <h3>Price</h3>
+            <h3>Premium Old School Knit</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 13000</h3>
         </div>
     </section>
 
-    <footer>
+    <footer style="margin-top: 50px;">
         <div class="main-footer">
             <h2 class="foothead" style="cursor: text;">Support</h2>
             <ul>
@@ -191,6 +219,10 @@
                 <li>Sustainability</li>
             </ul>
         </div>
+        <div class="main-footer3">
+            <h2 class="foothead3">Sign in to contact us</h2>
+            <a href="/src/pages/login.html">Click Here To Sign In</a>
+        </div>
     </footer>
     <footer class="footer2">
         <div class="icon">
@@ -199,7 +231,7 @@
             <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
         </div>
-        <div class="copyr">© WalkStar Shoes Nepal, Inc.</div>
+        <div class="copyright">© WalkStar Shoes Nepal, Inc.</div>
     </footer>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
