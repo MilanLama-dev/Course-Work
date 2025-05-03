@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: linear-gradient(#ADA996, #F2F2F2, #DBDBDB, #EAEAEA);
+    background-image: linear-gradient(#ADA996);
 }
 
 nav {
@@ -53,16 +53,17 @@ nav {
     color: orange;
 }
 
-.logo{
-    font-size: 35px;
-    margin-left: auto;
-    height: auto;
-    
+.pic1{
+    margin-top: 40px;
+    width: 25vw;
+    height: 8.5vh;
+    margin-left: 690px;
+    position: relative;
 }
 
 
 .icons {
-    margin-left: auto;
+    margin-left: 440px;
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -86,24 +87,31 @@ ion-icon {
 
 .textoverlay {
     position: absolute;
-    bottom: 115px;
-    left: 16px;
+    bottom: 160px;
+    left: 65px;
+    line-height: 50px;
 }
 
 .textoverlay h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
     height: 20px;
 }
 
 .textoverlay a {
+    padding: 15px;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
     text-decoration: none;
+    background-color: white;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    border: 0px solid white;
 }
 
 .trending {
     display: flex;
     margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .inline {
@@ -189,4 +197,84 @@ ion-icon {
 .pic2 {
     width : 23vw;
     height: 45vh;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    gap: 90px;
+}
+
+.foothead {
+    margin-top: 15px;
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-footer {
+    margin-left: 140px;
+}
+
+.main-footer ul {
+    list-style-type: none;
+}
+
+.main-footer ul li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.foothead2 {
+    margin-top: 15px;
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.main-footer2 ul {
+    list-style-type: none;
+}
+
+.main-footer2 ul li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.footer2 {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 270px;
+    margin-left: 110px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon ion-icon {
+    color: white;
+    font-size: 25px;
+}
+
+.copyr {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    margin-right: 10px;
+    cursor: pointer;
 }
