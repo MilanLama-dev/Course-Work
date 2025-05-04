@@ -99,6 +99,7 @@ ion-icon {
     color: black;
 }
 
+/*This is for footers*/
 footer {
     display: flex;
     flex-wrap: wrap;

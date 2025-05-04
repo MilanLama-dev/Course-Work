@@ -1,3 +1,4 @@
+/*This is for form section*/
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@ form {
     padding: 12px;
     border-radius: 8px;
 }
-
+/*This is for button section*/
 button {
     border: solid 1px rgb(224, 222, 222);
     width: fit-content;
