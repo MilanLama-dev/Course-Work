@@ -114,7 +114,7 @@ padding: 8px;
     width : 360px;
     height: 250px;
 }
-/*This section is for */
+/*This section is for dynamic section*/
 @media screen and (max-width : 1440px) {
     .products-container {
         grid-template-columns: auto auto auto;
