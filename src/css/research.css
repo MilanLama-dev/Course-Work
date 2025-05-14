@@ -1,0 +1,15 @@
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1 {
+    font-size: 40px;   
+}
+
+.container-1 img{
+    object-fit: contain;
+}
+
+.container-2 img{
+    object-fit: contain;
+}
