@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: 'Times New Roman', serif;
-  background: url('https://i.imgur.com/U6V0H9k.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: gold;
+  background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  color: rgb(196, 2, 2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +12,13 @@ body {
 }
 
 .profile-pic-frame {
-  border: 5px double gold;
+  border: 5px double rgb(222, 0, 0);
   border-radius: 50%;
   padding: 8px;
   width: 180px;
   height: 180px;
   overflow: hidden;
-  box-shadow: 0 0 15px gold;
+  box-shadow: 0 0 15px rgb(233, 2, 2);
   background: #111;
 }
 
@@ -34,8 +34,8 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 30px 40px;
   border-radius: 20px;
-  border: 2px solid gold;
-  box-shadow: 0 0 25px gold;
+  border: 2px solid rgb(239, 0, 0);
+  box-shadow: 0 0 25px rgb(221, 0, 0);
   text-align: center;
   max-width: 600px;
 }
@@ -43,7 +43,7 @@ body {
 .info-card h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: gold;
+  color: rgb(245, 8, 8);
 }
 
 .info-card p {
@@ -55,5 +55,5 @@ body {
   font-style: italic;
   margin-top: 15px;
   font-size: 1.2rem;
-  color: #fff8dc;
+  color: #d60707;
 }
