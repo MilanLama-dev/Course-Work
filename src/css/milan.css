@@ -94,6 +94,11 @@ body {
     padding-right: 30px;
 }
 
+.skillbar h2{
+  color: #fec125;
+  font-size: 25px;
+}
+
 .progressbar-text{
   font-size: 14px;
   display: flex;
