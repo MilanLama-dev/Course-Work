@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  background: url('https://i.imgur.com/U6V0H9k.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.profile-pic-frame {
+  border: 5px double gold;
+  border-radius: 50%;
+  padding: 8px;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  box-shadow: 0 0 15px gold;
+  background: #111;
+}
+
+.profile-pic-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info-card {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 20px;
+  border: 2px solid gold;
+  box-shadow: 0 0 25px gold;
+  text-align: center;
+  max-width: 600px;
+}
+
+.info-card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #fff8dc;
+}

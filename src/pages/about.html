@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <script src="../js/login.js"></script>
-</head>
-<style>
-    body{
-        margin: 0;
-    }
-    .mySlides {
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        .mySlides {
             display: none;
         }
         .cartTab .cartList .item{
@@ -24,9 +22,10 @@
         .search-container{
             display: none;
         }
-</style>
+    </style>
+</head>
 <body>
-    <!--Start of nav bar-->
+      <!--Start of nav bar-->
     <nav>
 
         <!--This is for logo-->
@@ -37,7 +36,7 @@
     <li><a href="../pages/productpage.html">Product</a></li>
     <li><a href="../pages/blog.html">Blog</a></li>
     <li><a href="../pages/research.html">Research</a></li>
-    <li><a href="#">About Us</a></li>
+    <li><a href="../pages/about.html">About Us</a></li>
 </ul>
 <!--This div contains sidebar info and sidebar function-->
 <div class="sidebar" id="mySidebar">
@@ -123,32 +122,35 @@
 </nav>
 <!--End of navbar-->
 
-    <!--This is for from-->
-    <section class="form-wrapper">
-    <div class="form-card">
-    <form id="login-form" name="login-form" onsubmit="return validateLoginForm()" >
-        <h1 style="text-align: center;">Login</h1>
+  <h1 class="main-title">Meet the Team</h1>
 
-        <div class="form-input">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address">
-            <span id="email-error" style="color: red;"></span>
-        </div>
-        <div class="form-input">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password">
-            <span id="password-error" style="color: red;"></span>
-        </div>
-        <button type="submit">Login</button>
-
-        <div class="login-helper">
-            <a href="#">Forgot Password?</a>
-            <span>Don't have an account? <a href="../pages/signup.html">Sign Up</a></span>
-        </div>
-    </form>
+  <section class="team-container">
+    <!-- Nigesh -->
+    <div class="team-member nigesh" onclick="location.href='nigesh.html';">
+      <img src="../image/nigesh.jpg" alt="Nigesh">
+      <h2>Nigesh</h2>
     </div>
-    </section>
-<!--This is for footers-->
+
+    <!-- Milan -->
+    <div class="team-member milan" onclick="location.href='milan.html';">
+      <img src="../image/milan.jpg" alt="Milan">
+      <h2>Milan</h2>
+    </div>
+
+    <!-- Sadique -->
+    <div class="team-member sadique" onclick="location.href='sadique.html';">
+      <img src="sadique.jpg" alt="Sadique">
+      <h2>Sadique</h2>
+    </div>
+
+    <!-- Om Prakash -->
+    <div class="team-member om" onclick="location.href='om.html';">
+      <img src="om.jpg" alt="Om Prakash">
+      <h2>Om Prakash</h2>
+    </div>
+  </section>
+
+  <!--This is for footer-->
     <footer style="margin-top: 50px;">
         <div class="main-footer">
             <h2 class="foothead" style="cursor: text;">Support</h2>
@@ -187,7 +189,7 @@
     </footer>
 
     <script>
-                function bar_open() {
+        function bar_open() {
     document.getElementById("mySidebar").style.width = "250px";
 }
 
@@ -210,9 +212,9 @@ function wishListOpen() {
 function wishListClose() {
     document.getElementById("wishlist").style.width = "0";
 }
-    </script>
+</script>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

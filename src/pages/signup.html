@@ -12,44 +12,116 @@
     body{
         margin: 0;
     }
+    .mySlides {
+            display: none;
+        }
+        .cartTab .cartList .item{
+            display: none;
+        }
+        .wishListTab .wishList .item{
+            display: none;
+        }
+        .search-container{
+            display: none;
+        }
 </style>
 <body>
-        <!--Start of nav bar-->
-        <nav>
+    <!--Start of nav bar-->
+    <nav>
 
-            <!--This is for logo-->
-            <img class="pic1" src="../image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
-    
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/productpage.html">Product</a></li>
-        <li><a href="../pages/blog.html">Blog</a></li>
-        <li><a href="../pages/research.html">Research</a></li>
-        <li><a href="#">About Us</a></li>
-    </ul>
-    <!--This div contains sidebar info and sidebar function-->
-    <div class="sidebar" id="mySidebar">
-        <button class="click2" onclick="bar_close()">&times;</button>
-        <a href="../index.html">Home</a>
-        <a href="../pages/productpage.html">Product</a>
-        <a href="../pages/blog.html">Blog</a>
-        <a href="../pages/research.html">Research</a>
-        <a href="#">About Us</a>
+        <!--This is for logo-->
+        <img class="pic1" src="../image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
+
+<ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages/productpage.html">Product</a></li>
+    <li><a href="../pages/blog.html">Blog</a></li>
+    <li><a href="../pages/research.html">Research</a></li>
+    <li><a href="#">About Us</a></li>
+</ul>
+<!--This div contains sidebar info and sidebar function-->
+<div class="sidebar" id="mySidebar">
+    <button class="click2" onclick="bar_close()">&times;</button>
+    <a href="../index.html">Home</a>
+    <a href="../pages/productpage.html">Product</a>
+    <a href="../pages/blog.html">Blog</a>
+    <a href="../pages/research.html">Research</a>
+    <a href="../pages/about.html">About Us</a>
+</div>
+<!--button created to access sidebar-->
+<div class="Button">
+    <button class="sidebar-button" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
+</div>
+<!--This is for imported icons-->
+<div class="icons">
+    <a class="wishlist" onclick="wishListOpen()" style="cursor: pointer;"><ion-icon name="heart-outline"></ion-icon></a>
+    <a href="../pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
+    <a class="cart" onclick="cartOpen()" style="cursor: pointer;"><ion-icon name="cart-outline"></ion-icon></a>
+    <a class="srch" onclick="openSearch()" style="cursor: pointer;"><ion-icon name="search-outline"></ion-icon></a>
+</div>
+
+<div class="search-container" id="srch">
+    <div class="searchbar">
+        <ion-icon name="search-outline"></ion-icon>
+        <input class="search" type="search" placeholder="Search">
+        <button onclick="closeSearch()">&times;</button>
     </div>
-    <!--button created to access sidebar-->
-    <div class="Button">
-        <button class="sidebar-button" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
+</div>
+
+<div class="cartTab" id="cart">
+    <h1>Shopping Cart</h1>
+    <div class="cartList">
+        <div class="item" id="item">
+            <div class="image">
+                <img src="../image/black-color.webp" alt="">
+            </div>
+            <div class="name">
+                Engine A Basketball Shoes
+            </div>
+            <div class="price">
+                Rs. 22000
+            </div>
+            <div class="quantity">
+                <button class="minus" onclick="changeQuantity(1)">+</button>
+                <span class="totalnum" id="totalnum">1</span>
+                <button class="plus" onclick="changeQuantity(-1)">-</button>
+            </div>
+        </div>
     </div>
-    <!--This is for imported icons-->
-    <div class="icons">
-        <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
-        <a href="../pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
-        <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
-        <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+
+<div class="cartBtn">
+    <button class="close" onclick="cartClose()">Close</button>
+    <button class="checkOut">CheckOut</button>
+</div>
+</div>
+
+<div class="wishListTab" id="wishlist">
+    <h1>WishList</h1>
+    <div class="wishList">
+        <div class="item" id="items">
+            <div class="image">
+                <img src="../image/black-color.webp" alt="">
+            </div>
+            <div class="name">
+                Engine A Basketball Shoes
+            </div>
+            <div class="price">
+                Rs. 22000
+            </div>
+            <div class="remove">
+                <button class="remove" onclick="remove()">&times;</button>
+            </div>
+        </div>
     </div>
-    
-    </nav>
-    <!--End of navbar-->
+
+<div class="wishBtn">
+    <button class="close" onclick="wishListClose()">Close</button>
+    <button class="AddtoCart">Add To Cart</button>
+</div>
+</div>
+
+</nav>
+<!--End of navbar-->
 
     <!--This is for form-->
     <section class="form-wrapper">
@@ -125,6 +197,32 @@
         </div>
         <div class="copyright">© WalkStar Shoes Nepal, Inc.</div>
     </footer>
+
+    <script>
+                function bar_open() {
+    document.getElementById("mySidebar").style.width = "250px";
+}
+
+function bar_close() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+
+function cartOpen() {
+    document.getElementById("cart").style.width = "400px";
+}
+
+function cartClose() {
+    document.getElementById("cart").style.width = "0";
+}
+
+function wishListOpen() {
+    document.getElementById("wishlist").style.width = "400px";
+}
+
+function wishListClose() {
+    document.getElementById("wishlist").style.width = "0";
+}
+    </script>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>

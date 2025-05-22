@@ -1,3 +1,14 @@
+/*this is for the search bar open and close */
+function openSearch(){
+    let search = document.getElementById('srch');
+    search.style.display = 'flex';
+}
+
+function closeSearch(){
+  let search = document.getElementById('srch');
+    search.style.display = 'none';
+}
+
 function option_open() {
     var filtermenu = document.getElementById("jsfilter");
     let width = filtermenu.getBoundingClientRect().width;

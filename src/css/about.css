@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-placeholder, .footer-placeholder {
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px 0;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team-member {
+  background-color: #fafafa;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.nigesh {
+  background: linear-gradient(to bottom right, #ffe082, #ffca28);
+  border: 2px solid #ffa000;
+}
+
+.milan {
+  background: linear-gradient(to bottom right, #ffe082, #ffca28);
+  border: 2px solid #ffa000;
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkStar Products</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/singleproduct.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        .mySlides {
+            display: none;
+        }
+        .cartTab .cartList .item{
+            display: none;
+        }
+        .wishListTab .wishList .item{
+            display: none;
+        }
+        .search-container{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Start of nav bar-->
+    <nav>
+
+        <!--This is for logo-->
+        <img class="pic1" src="../image/Screenshot_2025-05-03_085313-removebg-preview.png" alt="Logo">
+
+<ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages/productpage.html">Product</a></li>
+    <li><a href="../pages/blog.html">Blog</a></li>
+    <li><a href="../pages/research.html">Research</a></li>
+    <li><a href="#">About Us</a></li>
+</ul>
+<!--This div contains sidebar info and sidebar function-->
+<div class="sidebar" id="mySidebar">
+    <button class="click2" onclick="bar_close()">&times;</button>
+    <a href="../index.html">Home</a>
+    <a href="../pages/productpage.html">Product</a>
+    <a href="../pages/blog.html">Blog</a>
+    <a href="../pages/research.html">Research</a>
+    <a href="../pages/about.html">About Us</a>
+</div>
+<!--button created to access sidebar-->
+<div class="Button">
+    <button class="sidebar-button" onclick="bar_open()" style="font-size: 25px; cursor: pointer; border: none; background: transparent;">&#9776;</button>
+</div>
+<!--This is for imported icons-->
+<div class="icons">
+    <a class="wishlist" onclick="wishListOpen()" style="cursor: pointer;"><ion-icon name="heart-outline"></ion-icon></a>
+    <a href="../pages/login.html"><ion-icon name="person-outline"></ion-icon></a>
+    <a class="cart" onclick="cartOpen()" style="cursor: pointer;"><ion-icon name="cart-outline"></ion-icon></a>
+    <a class="srch" onclick="openSearch()" style="cursor: pointer;"><ion-icon name="search-outline"></ion-icon></a>
+</div>
+
+<div class="search-container" id="srch">
+    <div class="searchbar">
+        <ion-icon name="search-outline"></ion-icon>
+        <input class="search" type="search" placeholder="Search">
+        <button onclick="closeSearch()">&times;</button>
+    </div>
+</div>
+
+<div class="cartTab" id="cart">
+    <h1>Shopping Cart</h1>
+    <div class="cartList">
+        <div class="item" id="item">
+            <div class="image">
+                <img src="../image/black-color.webp" alt="">
+            </div>
+            <div class="name">
+                Engine A Basketball Shoes
+            </div>
+            <div class="price">
+                Rs. 22000
+            </div>
+            <div class="quantity">
+                <button class="minus" onclick="changeQuantity(1)">+</button>
+                <span class="totalnum" id="totalnum">1</span>
+                <button class="plus" onclick="changeQuantity(-1)">-</button>
+            </div>
+        </div>
+    </div>
+
+<div class="cartBtn">
+    <button class="close" onclick="cartClose()">Close</button>
+    <button class="checkOut">CheckOut</button>
+</div>
+</div>
+
+<div class="wishListTab" id="wishlist">
+    <h1>WishList</h1>
+    <div class="wishList">
+        <div class="item" id="items">
+            <div class="image">
+                <img src="../image/black-color.webp" alt="">
+            </div>
+            <div class="name">
+                Engine A Basketball Shoes
+            </div>
+            <div class="price">
+                Rs. 22000
+            </div>
+            <div class="remove">
+                <button class="remove" onclick="remove()">&times;</button>
+            </div>
+        </div>
+    </div>
+
+<div class="wishBtn">
+    <button class="close" onclick="wishListClose()">Close</button>
+    <button class="AddtoCart">Add To Cart</button>
+</div>
+</div>
+
+</nav>
+<!--End of navbar-->
+
+<section class="product-container">
+    <div class="product-image-container">
+        <div class="mySlides">
+        <img src="../image/productshoe1.webp">
+        </div>
+        <div class="mySlides">
+        <img src="../image/productshoe2.webp">
+        </div>
+        <div class="mySlides">
+        <img src="../image/productshoe3.webp">
+        </div>
+        <div class="mySlides">
+        <img src="../image/productshoe4.webp">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="shoe-name">
+        <h1>Engine A Basketball Shoes</h1>
+        <h3>Men's wear</h3>
+
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half-outline"></ion-icon>
+        <a href="#Review">4.5
+        <p>5 Reviews</p>
+        </a>
+
+        <h2>Rs.22000</h2>
+
+            <div class="shoe-detail">
+        <h5>Color: Black/Green/Red</h5>
+        <div class="color-detail">
+            <img src="../image/black-color.webp" alt="">
+            <img src="../image/green-color.webp" alt="">
+            <img src="../image/red-color.webp" alt="">
+        </div>
+
+        <h2>Sizes</h2>
+        <div class="shoe-size">
+        <div class="size-button">
+            <a>6</a>
+        </div>
+        <div class="size-button">
+            <a>7</a>
+        </div>
+        <div class="size-button">
+            <a>8</a>
+        </div>
+        <div class="size-button">
+            <a>9</a>
+        </div>
+        <div class="size-button">
+            <a>10</a>
+        </div>
+        <div class="size-button">
+            <a>11</a>
+        </div>
+        <div class="size-button">
+            <a>12</a>
+        </div>
+        </div>
+
+        <div class="shoe-numbers">
+            <p><b>Select Shoe Quantity</b></p>
+            <select name="options" class="shoe-quantity">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+            </select>
+        </div>
+
+        
+        <div class="Cart">
+            <button type="button" class="Cart-button" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="Wishlist">
+            <button type="button" class="Wishlist-button" onclick="addToWishList()">Add to Wishlist</button>
+        </div>
+
+        <div class="description">
+            <h2>Description</h2>
+            <p style="word-wrap: break-word;">Reebok brings new energy to the hardwood with these performance basketball shoes. A one-piece molded synthetic upper offers support in a lightweight and breathable package. ERS technology provides cushioning, stability and energy return. Cutouts in the outsole reveal the shock-absorbing SuperFloat foam core.</p>
+            
+            <hr>
+
+            <button onclick="myFunction()" id="myBtn"><h4>Specifications &gt;</h4></button>
+            <span class="product-specs" id="more">
+            <ul>
+                <li>Designed for: Performance basketball</li>
+                <li>Width: Standard</li>
+                <li>Closure: Lace closure</li>
+                <li>Upper material: Molded with molded heel cap</li>
+                <li>Lining material: Textile</li>
+                <li>Midsole material: ERS technology with SuperFloat foam core</li>
+                <li>Outsole material: Rubber with reinforced TPU shank</li>
+                <li>Parent Sku:100229063</li>
+            </ul>
+            </span>
+
+            <hr>
+
+            <button onclick="shippingFunction()" id="myButton"><h4>Shopping & Returns &gt;</h4></button>
+            <span class="product-specs" id="shipping">
+                <p>Enjoy FREE Standard shipping on all orders $100+. View our shipping policy here.</p>
+                <p>We gladly accept returns on eligible items within 30 days of delivery. View our full return policy for details.</p>
+            </span>
+            
+
+            <hr>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Similars">
+        <div class="new">
+            <h1>You May Also Like</h1>
+        </div>
+    </section>
+
+    <section class="products-container">
+        <div class="product-card">
+            <a href="pages/productpage.html">
+            <img class="pic2" src="../image/JPG-100233213_SLC_eCom.webp" alt="shoe">
+            </a>
+            <h3>Rebook x Mountaineering Classic Leather</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 10000</h3>
+        </div>
+        <div class="product-card">
+            <a href="pages/productpage.html">
+            <img class="pic2" src="../image/Suede-Classic-Sneakers.avif" alt="shoe">
+            </a>
+            <h3>Suede Classic</h3>
+            <h3>Men's Wear</h3>
+            <h3>Rs. 9000</h3>
+        </div>
+        <div class="product-card">
+            <a href="pages/productpage.html">
+            <img class="pic2" src="../image/Speedcat-Leather-Women's-Sneakers.avif" alt="shoe">
+            </a>
+            <h3>Speedcat Leather</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 11000</h3>
+        </div>
+        <div class="product-card">
+            <a href="pages/productpage.html">
+            <img class="pic2" src="../image/Premium-Old-Skool-Knit-Shoe.avif" alt="shoe">
+            </a>
+            <h3>Premium Old School Knit</h3>
+            <h3>Women's Wear</h3>
+            <h3>Rs. 13000</h3>
+        </div>
+    </section>
+
+    <section class="Review" id="Review">
+        <h1>CUSTOMER REVIEWS</h1>
+        <div class="reviews">
+            <div class="rating">
+                <h2>4.5</h2>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon>
+                <p>20 Reviews</p>
+            </div>
+            
+            <div class="progress-rating">
+            <div class="progress">
+                <div class="reviewProgress">
+                    <div class="reviewBar"></div>
+                </div>
+
+                <div class="reviewProgress1">
+                    <div class="reviewBar1"></div>
+                </div>
+
+                <div class="reviewProgress2">
+                    <div class="reviewBar2"></div>
+                </div>
+
+                <div class="reviewProgress3">
+                    <div class="reviewBar3"></div>
+                </div>
+
+                <div class="reviewProgress4">
+                    <div class="reviewBar4"></div>
+                </div>
+            </div>
+
+            <div class="progressRatingdetail">
+                <div class="rating-details">
+                    <h3>5.0</h3>
+                    <p>10 reviews</p>
+                </div>
+                <div class="rating-details">
+                    <h3>4.0</h3>
+                    <p>5 reviews</p>
+                </div>
+                <div class="rating-details">
+                    <h3>3.0</h3>
+                    <p>3 reviews</p>
+                </div>
+                <div class="rating-details">
+                    <h3>2.0</h3>
+                    <p>2 reviews</p>
+                </div>
+                <div class="rating-details">
+                    <h3>1.0</h3>
+                    <p>0 reviews</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="review-post-form">
+                <h1>Write A Review</h1>
+                <input type="text" id="userName" placeholder="Enter UserName">
+                <input type="number" id="star" min="1" max="5" placeholder="Select Star">
+                <input type="text" id="title" placeholder="Write A Review"/>
+                <input type="text" id="image" placeholder="Image(optional)" />
+                <button onclick="addReview()">Add Post</button>
+            </div>
+        </div>
+
+        <h2>Reviews</h2>
+
+
+        <hr style="width: 1100px;">
+        <div class="review-post" id="review-post">
+            <div class="post">
+                <div class="userName">
+                    <h3>Sadiq</h3>
+                </div>
+                <div class="review-image">
+                    <div>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>Great Shoes</p>
+                    <img src="../image/black-color.webp">
+                </div>
+                <div class="date">
+                    <h4>5/10/2025</h4>
+                </div>
+            </div>
+            <div class="post">
+                <div class="userName">
+                    <h3>Om Prakash</h3>
+                </div>
+                <div class="review-image">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <p>Excellent product. Strongly recommended</p>
+                    <img src="../image/black-color.webp">
+                </div>
+                <div class="date">
+                    <h4>5/10/2025</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--This is for footer-->
+    <footer style="margin-top: 50px;">
+        <div class="main-footer">
+            <h2 class="foothead" style="cursor: text;">Support</h2>
+            <ul>
+                <li>Contact Us</li>
+                <li>FAQ</li>
+                <li>Shipping and Delivery</li>
+                <li>Return Policy</li>
+                <li>Terms and Condition</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Setting</li>
+            </ul>
+            </div>
+            <div class="main-footer2">
+            <h2 class="foothead2">About</h2>
+            <ul>
+                <li>Company</li>
+                <li>Career</li>
+                <li>Investors</li>
+                <li>Sustainability</li>
+            </ul>
+        </div>
+        <div class="main-footer3">
+            <h2 class="foothead3">Sign in to contact us</h2>
+            <a href="../pages/login.html">Click Here To Sign In</a>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div class="icon">
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-x"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+        <div class="copyright">© WalkStar Shoes Nepal, Inc.</div>
+    </footer>
+
+    <script>
+        function bar_open() {
+    document.getElementById("mySidebar").style.width = "250px";
+}
+
+function bar_close() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+
+function cartOpen() {
+    document.getElementById("cart").style.width = "400px";
+}
+
+function cartClose() {
+    document.getElementById("cart").style.width = "0";
+}
+
+function wishListOpen() {
+    document.getElementById("wishlist").style.width = "400px";
+}
+
+function wishListClose() {
+    document.getElementById("wishlist").style.width = "0";
+}
+</script>
+
+    <script src="../js/singleproduct.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

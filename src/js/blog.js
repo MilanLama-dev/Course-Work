@@ -1,3 +1,14 @@
+/*this is for the search bar open and close */
+function openSearch(){
+    let search = document.getElementById('srch');
+    search.style.display = 'flex';
+}
+
+function closeSearch(){
+  let search = document.getElementById('srch');
+    search.style.display = 'none';
+}
+
 function addPost() {
     const title = document.getElementById('title').value;
     const content = document.getElementById('content').value;

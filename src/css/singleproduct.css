@@ -1,0 +1,394 @@
+.product-container {
+    display: flex;
+    margin-left: 32px;
+}
+
+.product-image-container{
+    padding: 24px 8px 8px 24px;
+    width: 1100px;
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    bottom: 22%;
+    right: 50%;
+    padding: 16px;
+    width: auto;
+    font-size: 22px;
+    color: black;
+    transition: 0.6s ease;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 22%;
+    right: 48%;
+    padding: 16px;
+    width: 15px;
+    font-size: 22px;
+    color: black;
+    transition: 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.product-image-container img{
+    vertical-align: middle;
+    width: 1050px;
+    height: 640px;
+    object-fit: contain;
+}
+
+.shoe-name {
+    width: 400px;
+}
+
+.shoe-name a{
+    color: black;
+    text-decoration: none;
+}
+
+.color-detail {
+    display: flex;
+    width: 350px;
+    column-gap: 8px;
+}
+
+.color-detail img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.shoe-size {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 20px;
+}
+
+.size-button {
+    display: flex;
+    border: 1px solid;
+    width: 68px;
+    height: 46px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size-button:active{
+    background-color: black;
+    color: white;
+}
+
+.size-button a{
+    padding-left: 26px;
+    font-size: 20px;
+}
+
+.shoe-numbers {
+    padding-top: 16px;
+}
+
+.shoe-numbers p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.shoe-quantity {
+    width: 56px;
+    height: 36px;
+    font-size: 20px;
+}
+
+.Cart {
+  padding-top: 24px;  
+}
+
+.Cart .Cart-button{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 380px;
+    height: 56px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+}
+
+.Wishlist {
+  padding-top: 24px;  
+}
+
+.Wishlist .Wishlist-button{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 380px;
+    height: 56px;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid;
+}
+
+.description button{
+    display: flex;
+    width: 400px;
+    text-align: start;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 22px 24px px 0px;
+    font-size: 14px;
+}
+
+#more {
+    display: none;
+}
+
+#shipping {
+    display: none;
+}
+
+.Similars {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.new {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-gap: 16px;
+    row-gap: 32px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.product-card {
+    box-shadow: 0px 0px 22px 5px rgba(120,107,107,0.5);
+-webkit-box-shadow: 0px 0px 22px 5px rgba(120,107,107,0.5);
+-moz-box-shadow: 0px 0px 22px 5px rgba(120,107,107,0.5);
+border-top-left-radius: 24px;
+border-top-right-radius: 24px;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+padding: 8px;
+}
+
+.product-card-body {
+    padding: 8px;
+}
+
+.pic2 {
+    object-fit: cover;
+    border-radius: 24px;
+    width : 360px;
+    height: 250px;
+}
+
+.Review {
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.Review h1{
+    padding-left: 620px;
+    padding-bottom: 30px;
+}
+
+.Review h2{
+    padding-top: 20px;
+    padding-left: 690px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 320px 220px;
+    column-gap: 100px;
+    padding-left: 120px;
+} 
+
+.rating {
+    margin-top: -12px;
+    padding-left: 100px;
+}
+
+.rating h2{
+    padding-left: 50px;
+    font-size: 40px;
+    height: 15px;
+}
+
+.rating p{
+    padding-left: 35px;
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.progress-rating {
+    display: grid;
+    grid-template-columns: 430px 200px;
+}
+
+.progress {
+    padding-top: 15px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.reviewProgress {
+width: 400px;
+height: 12px;
+border-radius: 24px;
+background-color: gray;
+}
+
+.reviewBar {
+    border-radius: 24px;
+    width: 60%;
+    height: 12px;
+    background-color: black;
+}
+
+.reviewProgress1 {
+width: 400px;
+height: 12px;
+border-radius: 24px;
+background-color: gray;
+}
+
+.reviewBar1 {
+    border-radius: 24px;
+    width: 25%;
+    height: 12px;
+    background-color: black;
+}
+
+.reviewProgress2 {
+width: 400px;
+height: 12px;
+border-radius: 24px;
+background-color: gray;
+}
+
+.reviewBar2 {
+    border-radius: 24px;
+    width: 10%;
+    height: 12px;
+    background-color: black;
+}
+
+.reviewProgress3 {
+width: 400px;
+height: 12px;
+border-radius: 24px;
+background-color: gray;
+}
+
+.reviewBar3 {
+    border-radius: 24px;
+    width: 5%;
+    height: 12px;
+    background-color: black;
+}
+
+.reviewProgress4 {
+width: 400px;
+height: 12px;
+border-radius: 24px;
+background-color: gray;
+}
+
+.reviewBar4 {
+    border-radius: 24px;
+    width: 0%;
+    height: 12px;
+    background-color: black;
+}
+
+.rating-details {
+    display: grid;
+    grid-template-columns: 40px 90px;
+}
+
+.rating-details h3{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rating-details p{
+    margin-top: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-post-form{
+    display: grid;
+    grid-gap: 10px;
+    padding-left: 50px;
+    justify-content: center;
+}
+
+.review-post-form h1{
+    margin-left: 110px;
+    padding-left: 0%;
+}
+
+.review-post-form input{
+    margin-right: 200px;
+    width: 400px;
+    height: 30px;
+}
+
+.review-post-form button{
+    margin-left: 150px;
+    width: 90px;
+    height: 25px;
+}
+
+.review-post {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.post {
+    display: grid;
+    margin-left: 300px;
+    grid-template-columns: 250px 400px 200px;
+}
+
+.userName h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.review-image p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+.review-image img{
+    width: 120px;
+     height: 100px;
+     object-fit: contain;
+}
+
+.date h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}

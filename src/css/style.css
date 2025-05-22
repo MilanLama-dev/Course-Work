@@ -211,3 +211,169 @@ footer {
         display: none;
     }
     }
+
+
+    .cartTab {
+        width: 0;
+        background-color: rgb(228, 228, 228);
+        color: black;
+        position: fixed;
+        top: 8.3%;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-rows: 70px 1fr 70px;
+    }
+
+    .cartTab .cartList .image {
+        padding: 12px;
+    }
+
+    .cartTab h1 {
+        padding: 20px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .cartTab .cartBtn {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+    .cartTab .cartBtn button {
+        background-color: #e7ad51;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .cartTab .cartBtn .close{
+        background-color: white;
+    }
+
+    .cartTab .cartList .item img{
+        width: 100%;
+    }
+
+    .cartTab .cartList .item {
+        display: grid;
+        grid-template-columns: 100px 100px 80px 90px;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cartList .quantity button {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        color: black;
+        cursor: pointer;
+    }
+
+    .cartList .quantity .totalnum {
+        background-color: transparent;
+        color: black;
+    }
+
+    
+    .wishListTab {
+        width: 0;
+        background-color: rgb(228, 228, 228);
+        color: black;
+        position: fixed;
+        top: 8.3%;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-rows: 70px 1fr 70px;
+    }
+
+    .wishListTab .wishList .image {
+        padding: 12px;
+    }
+
+    .wishListTab h1 {
+        padding: 20px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .wishList .remove button{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        color: black;
+        cursor: pointer;
+    }
+
+    .wishListTab .wishBtn {
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+    .wishListTab .wishBtn button {
+        background-color: #e7ad51;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .wishListTab .wishBtn .close{
+        background-color: white;
+    }
+
+    .wishListTab .wishList .item img{
+        width: 100%;
+    }
+
+        .wishListTab .wishList .item {
+        display: grid;
+        grid-template-columns: 90px 140px 90px 40px;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .search-container {
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        height: 78px;
+        left: 0;
+        background-color: white;
+        top: 0;
+    }
+
+    .searchbar{
+        margin-top: 7px;
+        width: 100%;
+        z-index: 1;
+        padding-left: 180px;
+    }
+
+    .search {
+        margin: 10px;
+        width: 1250px;
+        height: 45px;
+    }
+
+    .searchbar ion-icon {
+        font-size: 20px;
+    }
+
+    .searchbar button{
+        background-color: transparent;
+        border: none;
+        align-self: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
